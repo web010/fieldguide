@@ -1,6 +1,5 @@
 /* /fieldguide/js/peblcode/db_websql.js */
 
-
 App.DataProvider = (function(){
 	
 	

@@ -1,5 +1,6 @@
 /* /fieldguide/js/bootstrap.js */
 
+
 var App = {};
 
 var useDB;
