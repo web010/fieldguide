@@ -1,5 +1,5 @@
-/* /fieldguide/js/peblcode/db_jason.js
- *
+
+/*
  * Constructor lijkt nu niet nodig. Het is of jason of websql js die ingeladen wordt. 
  * In dat geval kan het object meteen in de flow geinit worden zonder een new constructor
  * MAAR dan moeten de namen van de objecten precies het zelfde zijn.
@@ -28,3 +28,45 @@ App.DataProvider = (function(){
 	}
 	
 })();
+
+
+
+
+
+
+/*
+App.dataProvider = {};
+
+
+
+
+
+var DataProvider = {};
+
+DataProvider.Beneficials = {
+	
+	find: function(){
+		App.Config.rootTables['beneficials']; // voor jason arrys deze concrere implementatie
+		sql = 'Select * From beneficials';	// voor web sql db  deze concrere implementatie
+	}	
+}; 
+
+
+DataProvider.Chemicals = {};
+DataProvider.Tradenames = {};
+
+var Models = {
+	"Beneficials" : DataProvider.Beneficials,
+	"Chemicals" : DataProvider.Chemicals,
+	
+};
+
+
+
+DataProvider.prototype.find(model, type, options){
+	var obj = Models[model];
+	
+	return //returnType resultset
+}
+
+*/
