@@ -1,3 +1,5 @@
+/* db_websql.js */
+
 
 App.DataProvider = (function(){
 	
@@ -15,10 +17,10 @@ App.DataProvider = (function(){
 		},
 		/*
 		 *  INTERFACE find()
-		 */
+		 *
 		 * @param model: string hash array, App.Config.models[string modelname]
-		 * @type: string, type first|count|all|list|
-		 * @options: string hash array , ['conditions'] = {  'Model.field' : 'value'}}, ['field'] = {'Model.field1', 'Model.field2'}, order|limit|recursive Extra: distinct
+		 * @param type: string, type first|count|all|list|
+		 * @param options: string hash array , ['conditions'] = {  'Model.field' : 'value'}}, ['field'] = {'Model.field1', 'Model.field2'}, order|limit|recursive Extra: distinct
 		 * 
 		 */
 		find: function (model, type, options){
