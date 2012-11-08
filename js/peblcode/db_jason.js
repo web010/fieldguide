@@ -23,12 +23,12 @@ App.DataProvider = (function(){
 		 */
 		find: function (model, type, options){
 			
-			//var model = model | 'undefined';
-			//var type = type | 'undefined';
-			//var options = options | 'undefined';
+			var model = model || 'undefined';
+			var type = type || 'undefined';
+			var options = options || 'undefined';
 			
 			
-			console.log(model);
+			console.log('model: ' + model + ' type:' + type + ' options' + options);
 			
 		}
 	}
