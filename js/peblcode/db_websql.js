@@ -1,4 +1,4 @@
-
+/* /fieldguide/js/peblcode/db_websql.js */
 
 
 App.DataProvider = (function(){
@@ -8,8 +8,7 @@ App.DataProvider = (function(){
 		
 		typeDataProvider: 'WebSQL',
 		init: function() {
-			
-			//console.log('init DataProvider van het type ' + this.typeDataProvider);
+			this.db = window.openDatabase(App.config.dbName, App.config.dbVersion, App.config.dbDisplayName, App.config.dbMaxSize);
 			console.log(App.Config.rootObjects);
 		}
 
