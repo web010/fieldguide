@@ -3,6 +3,11 @@
 
 App.DataProvider = (function(){
 	
+	// myprivatevar_1 : true,
+	// myprivatefunction : function(){}
+	
+	// elke var of function die niet in het return block zitten zijn
+	// private voor App.DataProvider en dus niet bereikbaar van buitenaf
 	
 	return {
 		
