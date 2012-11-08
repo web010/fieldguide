@@ -7,7 +7,7 @@ App.DataProvider = (function(){
 		
 		typeDataProvider: 'WebSQL',
 		init: function() {
-			this.db = window.openDatabase(App.config.dbName, App.config.dbVersion, App.config.dbDisplayName, App.config.dbMaxSize);
+			this.db = window.openDatabase(App.Config.dbName, App.Config.dbVersion, App.Config.dbDisplayName, App.Config.dbMaxSize);
 			console.log(App.Config.rootObjects);
 		}
 
