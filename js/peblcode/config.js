@@ -1,4 +1,4 @@
-/* /fieldguide/js/peblcode/db_jason.js */
+/* /js/peblcode/config.js */
 
 
  App.Config =  {
@@ -7,12 +7,8 @@
     dbVersion: "1.0",
     dbDisplayName: "Koppert Field Guide",
     dbMaxSize: "65536",
-    rootTables: ['beneficials','chemicals','tradenames','pestgroups','pests'],
-    rootObjects: {},//wordt gevuld in app/View/Mobile/jqueryMobile.ctp
-    relationTables: ['tradename_beneficials','beneficial_pests','beneficial_chemicals'],
+    masterModels: ['beneficials','chemicals','tradenames','pestgroups','pests'],
+    masterData: {},//wordt gevuld in app/View/Mobile/jqueryMobile.ctp
+    referenceModels: ['tradename_beneficials','beneficial_pests','beneficial_chemicals'],
     modifiedTables: ['lastmodified'],
-    models: ['tradename_beneficials','beneficial_pests','beneficial_chemicals'],
 };
-
-
-
