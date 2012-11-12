@@ -8,7 +8,7 @@ $(document).bind( "pageinit", function() {
 		* 2. Nieuwe user met browser met webSQL; user heeft dan keuze dit al of niet te gebruiken
 		* 3. User kan of wil webSQL niet gebruiken; is de rest	
 	*/
-	if(useDB){
+	if(App.useDB){
 		$('h1').append(' (off-line)');
 		App.Config.masterData = {};
 	}else if(Modernizr.websqldatabase){
@@ -25,9 +25,9 @@ $(document).bind( "pageinit", function() {
 $('#initDB').on('click', function() {
     App.dao.initialize(function() {
     		console.log('database initialized');
-    		useDB = true;
-    		userPreference['useDB'] = true;	
-    		localStorage.userPreference = JSON.stringify(userPreference);
+    		App.useDB = true;
+    		App.userPreference['useDB'] = true;	
+    		localStorage.userPreference = JSON.stringify(App.userPreference);
     });
 });
 // Listen for any attempts to call changePage().

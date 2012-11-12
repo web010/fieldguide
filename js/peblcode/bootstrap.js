@@ -3,15 +3,15 @@
 
 var App = {};
 
-var userPreference = {};//json object om preference van user (useDB or not) in localStorage te plaatsen/op te halen
-var useDB;//database wordt wel of niet gebruikt?
+var App.userPreference = {};//json object om preference van user (useDB or not) in localStorage te plaatsen/op te halen
+var App.useDB;//database wordt wel of niet gebruikt?
 
 
 if(localStorage.userPreference){
 	var localStorageUserPreference = JSON.parse(localStorage.userPreference);
-	useDB = localStorageUserPreference['useDB'];
+	App.useDB = localStorageUserPreference['useDB'];
 }else if(!Modernizr.websqldatabase){
-	useDB = false;
-	userPreference['useDB'] = useDB;	
-	localStorage.userPreference = JSON.stringify(userPreference);
+	App.useDB = false;
+	App.userPreference['useDB'] = App.useDB;	
+	localStorage.userPreference = JSON.stringify(App.userPreference);
 }
