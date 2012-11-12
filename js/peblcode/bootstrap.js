@@ -3,8 +3,8 @@
 
 var App = {};
 
-var App.userPreference = {};//json object om preference van user (useDB or not) in localStorage te plaatsen/op te halen
-var App.useDB;//database wordt wel of niet gebruikt?
+App.userPreference = {};//json object om preference van user (useDB or not) in localStorage te plaatsen/op te halen
+App.useDB;//database wordt wel of niet gebruikt?
 
 
 if(localStorage.userPreference){
